@@ -3,13 +3,10 @@
 
 
 class Square:
-    """python3 -c 'print(__import__("my_module").MyClass.__doc__)'"""
     __size = 0
     __position = (0,0)
 
     def __init__(self, size=0, position=(0, 0)):
-        """python3 -c 'print(__import__("my_module").MyClass.my_function
-        .__doc__)'"""
         """Initialize class."""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -19,22 +16,16 @@ class Square:
         self.__position = position 
 
     def area(self):
-        """python3 -c 'print(__import__("my_module").MyClass.my_function
-        .__doc__)'"""
         """Square area."""
         return (self.__size * self.__size)
 
     @property
     def size(self):
-        """python3 -c 'print(__import__("my_module").MyClass.my_function
-        .__doc__)'"""
         """getter def"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """python3 -c 'print(__import__("my_module").MyClass.my_function
-        .__doc__)'"""
         """setter def"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -44,15 +35,11 @@ class Square:
 
     @property
     def position(self):
-        """python3 -c 'print(__import__("my_module").MyClass.my_function
-        .__doc__)'"""
         """getter def"""
         return self.__position
 
     @position.setter
     def position(self, value):
-        """python3 -c 'print(__import__("my_module").MyClass.my_function
-        .__doc__)'"""
         if type(value) is not tuple:
             raise TypeError('position must be a tuple of 2 positive integers')
         elif len(value) is not 2:
@@ -65,8 +52,6 @@ class Square:
             self.__position = value
 
     def my_print(self):
-        """python3 -c 'print(__import__("my_module").MyClass.my_function
-        .__doc__)'"""
         """print def"""
         if self.__size == 0:
             print()
