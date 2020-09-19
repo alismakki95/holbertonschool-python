@@ -7,7 +7,8 @@ class Square:
     __size = 0
 
     def __init__(self, size=0):
-        """python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'"""
+        """python3 -c 'print(__import__("my_module").MyClass.my_function
+        .__doc__)'"""
         """Initialize class."""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -16,7 +17,8 @@ class Square:
         self.__size = size
 
     def area(self):
-        """python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'"""
+        """python3 -c 'print(__import__("my_module").MyClass.my_function
+        .__doc__)'"""
         """Square area."""
         return (self.__size * self.__size)
 
