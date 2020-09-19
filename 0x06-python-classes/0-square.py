@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-""Module for first square class"
+""python3 -c 'print(__import__("my_module").__doc__)'"" 
 class Square:
-""Class returns nothing""
     pass  # An empty block
