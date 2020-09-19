@@ -3,7 +3,7 @@
 
 
 class Square:
-  """python3 -c 'print(__import__("my_module").MyClass.__doc__)'"""
+"""python3 -c 'print(__import__("my_module").MyClass.__doc__)'"""
     __size = 0
      def __init__(self, size=0):
         """Initialize class."""
